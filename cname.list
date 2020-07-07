@@ -1,0 +1,10 @@
+/**
+ *
+ * Hi!
+ * 
+ * Make sure you enter the data using the format below:
+ * <subdomain>: <CNAME>
+ *
+ */
+
+frans: thedev.netlify.app
