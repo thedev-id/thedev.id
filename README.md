@@ -10,7 +10,8 @@
 
 <p align="center">
   <a href="https://thedev.id">thedev.id</a> |
-  <a href="https://twitter.com/fransallen">Twitter</a>
+  <a href="https://twitter.com/fransallen">Twitter</a> |
+  <a href="https://www.patreon.com/fransallen">Donate</a>
   <br /><br />
 	<a href="https://github.com/fransallen/thedev.id/contributors">
     <img src="https://img.shields.io/github/contributors/fransallen/thedev.id?color=brightgreen" alt="Contributors" height="20"/>
