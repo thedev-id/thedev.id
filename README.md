@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://thedev.id">
-    <img style="border-radius:50%" src="https://avatar.fly.dev/puredns.svg?text=t" alt="thedev.id" height="60"/>
+    <img src="https://avatar.fly.dev/puredns.svg?text=t" alt="thedev.id" height="60"/>
   </a>
 </p>
 
