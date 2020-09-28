@@ -1,12 +1,12 @@
 <p align="center">
   <a href="https://thedev.id">
-    <img src="https://cdn.statically.io/img/upset.dev/w=60/img/black.png" alt="thedev.id" height="60"/>
+    <img style="border-radius:50%" src="https://avatar.fly.dev/puredns.svg?text=t" alt="thedev.id" height="60"/>
   </a>
 </p>
 
 <h1 align="center">thedev.id</h1>
 
-<p align="center">A free identity for developers on the web.</p>
+<p align="center">An identity for developers on the web.</p>
 
 <p align="center">
   <a href="https://thedev.id">thedev.id</a> |
