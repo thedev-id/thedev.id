@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://thedev.id">
-    <img src="https://avatar.frans.workers.dev/t?rounded=true" alt="thedev.id" height="60"/>
+    <img src="https://cdn.statically.io/avatar/shape=circle/t" alt="thedev.id" height="60"/>
   </a>
 </p>
 
