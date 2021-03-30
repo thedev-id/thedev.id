@@ -6,6 +6,7 @@
 
 <h1 align="center">thedev.id</h1>
 
+<p align="center">NOTE: We do not support Netlify sites, sorry!</p>
 <p align="center">An identity for developers on the web.</p>
 
 <p align="center">
