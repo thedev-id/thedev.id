@@ -26,6 +26,6 @@
 ## :zap: How to get one
 
 - Fork this repo.
-- Add a CNAME to your [GitHub Pages](https://pages.github.com) or set a custom domain with value `{name}.thedev.id` on [Netlify](https://www.netlify.com).
+- Add a CNAME to your [GitHub Pages](https://pages.github.com).
 - Add your subdomain under `cname.list` file.
 - Send Pull Request.
