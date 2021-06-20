@@ -8,6 +8,7 @@ use Mailgun\Mailgun;
 $email   = getenv('CF_EMAIL');
 $apiKey  = getenv('CF_API_KEY');
 $zoneID  = getenv('CF_ZONE_ID');
+$mailgunDomain = getenv('MG_DOMAIN');
 $mailgunKey = getenv('MG_KEY');
 $mailFrom = getenv('MAIL_FROM');
 $mailTo  = getenv('MAIL_TO');
@@ -24,7 +25,7 @@ $data    = json_decode($json, true);
 
 function send_mail($subject, $text) {
   global $mg;
-  $mg->messages()->send('upset.dev', [
+  $mg->messages()->send($mailgunDomain, [
     'from'    => $mailFrom,
     'to'      => $mailTo,
     'subject' => $subject,
