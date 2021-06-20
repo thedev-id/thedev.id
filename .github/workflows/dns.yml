@@ -1,0 +1,23 @@
+name: DNS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check, update and add DNS records
+        env:
+          CF_EMAIL: ${{ secrets.CF_EMAIL }}
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+          MG_KEY: ${{ secrets.MG_KEY }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          composer install
+          php dns.php
