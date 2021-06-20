@@ -10,5 +10,5 @@ An identity for developers on the web.
 
 - Fork this repo.
 - Add a CNAME to your [GitHub Pages](https://pages.github.com).
-- Add your subdomain under `cname.list` file.
+- Add your subdomain under `subdomains.json` file.
 - Send Pull Request.
