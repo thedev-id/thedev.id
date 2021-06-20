@@ -1,29 +1,12 @@
-<p align="center">
-  <a href="https://thedev.id">
-    <img src="https://cdn.statically.io/avatar/shape=circle/t" alt="thedev.id" height="60"/>
-  </a>
-</p>
+# thedev.id
 
-<h1 align="center">thedev.id</h1>
+An identity for developers on the web.
 
-<p align="center">NOTE: We do not support Netlify sites, sorry!</p>
-<p align="center">An identity for developers on the web.</p>
-
-<p align="center">
-  <a href="https://thedev.id">thedev.id</a> |
-  <a href="https://twitter.com/fransallen">Twitter</a> |
-  <a href="https://www.patreon.com/fransallen">Donate</a>
-  <br /><br />
-	<a href="https://github.com/fransallen/thedev.id/contributors">
-    <img src="https://img.shields.io/github/contributors/fransallen/thedev.id?color=brightgreen" alt="Contributors" height="20"/>
-  </a>
-</p>
-
-## :sparkles: What is thedev.id
+## What is thedev.id
 
 **thedev.id** is a free identity for developers on the web. This service offers a handy subdomain like `foo.thedev.id` or `bar.thedev.id` for use on your static sites via CNAME. Fork, add subdomain, and send a Pull Request. We will make it work.
 
-## :zap: How to get one
+## How to get one
 
 - Fork this repo.
 - Add a CNAME to your [GitHub Pages](https://pages.github.com).
