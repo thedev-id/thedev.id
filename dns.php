@@ -26,6 +26,8 @@ $data    = json_decode($json, true);
 function send_mail($subject, $text) {
   global $mg;
   global $mailgunDomain;
+  global $mailFrom;
+  global $mailTo;
   $mg->messages()->send($mailgunDomain, [
     'from'    => $mailFrom,
     'to'      => $mailTo,
