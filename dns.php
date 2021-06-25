@@ -46,7 +46,7 @@ function get_status($url) {
     CURLOPT_HEADER         => 1,
     CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
     CURLOPT_SSL_VERIFYHOST => 0,
-    CURLOPT_USERAGENT      => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36 thedev.id-status-check',
+    CURLOPT_USERAGENT      => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36 thedev.id-status-check',
   ]);
 
   $response = curl_exec($ch);
