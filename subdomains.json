@@ -46,6 +46,7 @@
   "lord-xenon": "lord-xenon.vercel.app",
   "martinproject": "martinproject.github.io",
   "minlaxz": "minlaxz-info.web.app",
+  "mhmdrameez":"mhmdrameez.github.io",
   "nien": "nien.netlify.app",
   "nikhil": "nikhilmwarrier.github.io",
   "noel": "noeljacob.github.io",
@@ -77,5 +78,6 @@
   "wiktor": "wiktorwojcik112.github.io",
   "yeff": "yeffycodegit.github.io",
   "zen": "zen-sveltekit.vercel.app",
-  "zh": "zh.github.io"
+  "zh": "zh.github.io",
+  
 }
