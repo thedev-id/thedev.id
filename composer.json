@@ -1,8 +1,0 @@
-{
-    "require": {
-        "cloudflare/sdk": "^1.1",
-        "mailgun/mailgun-php": "^3.5",
-        "kriswallsmith/buzz": "^1.2",
-        "nyholm/psr7": "^1.4"
-    }
-}
