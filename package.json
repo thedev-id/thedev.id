@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "thedev.id",
+  "scripts": {
+    "sort": "sort-json subdomains.json"
+  },
+  "author": "Frans Allen",
+  "devDependencies": {
+    "sort-json": "^2.0.1"
+  }
+}
