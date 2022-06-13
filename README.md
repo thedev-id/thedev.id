@@ -11,5 +11,5 @@ An identity for developers on the web.
 - Fork this repo.
 - Set a custom domain to your [GitHub Pages](https://pages.github.com).
 - Add your subdomain under `subdomains.json` file.
-  > Make sure to add subdomain in the alphabetical order.
+- Run `npm install` and `npm run sort` to sort the keys alphabetically.
 - Send Pull Request.
