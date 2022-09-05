@@ -108,6 +108,7 @@
   "o": "owlg.github.io",
   "op": "op-bot.github.io",
   "pablo": "itspablo.glitch.me",
+  "paddycooper": "paddycooper.vercel.app",
   "penguin": "bcyayay14.github.io",
   "pers0n": "pers0n-dev.github.io",
   "phelix": "phelixdusengimanaweb.vercel.app",
@@ -166,6 +167,5 @@
   "zen": "zen-sveltekit.vercel.app",
   "zh": "zh.github.io",
   "zuhaib": "powrhouseofthecell.github.io",
-  "zvqle": "zvqlesrealm.vercel.app",
-  "paddycooper": "paddycooper.vercel.app"
+  "zvqle": "zvqlesrealm.vercel.app"
 }
