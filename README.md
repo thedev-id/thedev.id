@@ -8,6 +8,7 @@ An identity for developers on the web.
 
 ## How to get one
 
+- Star this repo.
 - Fork this repo.
 - Set a custom domain to your [GitHub Pages](https://pages.github.com).
 - Add your subdomain under `subdomains.json` file.
