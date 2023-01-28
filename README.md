@@ -16,6 +16,7 @@ An identity for developers on the web.
 - Send Pull Request.
 
 ### Similar Services
+- [Free Domains](https://github.com/free-domains/register)
 - [Open Domains](https://github.com/open-domains/register)
 - [cluster.ws & wip.la](https://github.com/Olivr/free-domain)
 - [is-a.dev](https://github.com/is-a-dev/register)
