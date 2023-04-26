@@ -22,3 +22,4 @@ An identity for developers on the web.
 - [is-a-good.dev](https://github.com/is-a-good-dev/register)
 - [is-really.cool](https://github.com/is-really-cool/register)
 - [js.org](https://github.com/js-org/js.org) (*JavaScript projects only*)
+- [merahputih.moe](https://github.com/ScathachGrip/merahputih.moe)
