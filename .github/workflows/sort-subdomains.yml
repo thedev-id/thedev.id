@@ -1,0 +1,23 @@
+name: Sort subdomains
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+    - run: npm install
+    - run: npm run sort
+    - name: Check for changes
+      run: git diff --exit-code || git commit -am "Sort subdomains"
+    - name: Push changes
+      if: success()
+      run: git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
