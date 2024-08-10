@@ -1,0 +1,34 @@
+---
+import { Sun, Moon } from 'lucide-react'
+---
+
+<div transition:persist class="flex flex-col justify-center">
+  <input
+    type="checkbox"
+    name="light-switch"
+    class="light-switch sr-only"
+    id="themeswitcher"
+  />
+  <label
+    class="relative flex h-11 w-11 cursor-pointer items-center justify-center border-2 border-border bg-white p-0 dark:border-darkBorder dark:bg-darkBg"
+    for="themeswitcher"
+  >
+    <Sun className="hidden h-6 w-6 stroke-darkText dark:inline" />
+    <Moon className="inline h-6 w-6 stroke-text dark:hidden" />
+    <span class="sr-only">Switch to light / dark version</span>
+  </label>
+</div>
+
+<script>
+  const handleToggleClick = () => {
+    const element = document.documentElement
+    element.classList.toggle('dark')
+
+    const isDark = element.classList.contains('dark')
+    localStorage.setItem('theme', isDark ? 'dark' : 'light')
+  }
+
+  document!
+    .getElementById('themeswitcher')!
+    .addEventListener('change', handleToggleClick)
+</script>
