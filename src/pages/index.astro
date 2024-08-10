@@ -1,5 +1,29 @@
 ---
+import config from '@/config'
+import { getCollection } from 'astro:content'
+
 import Base from '@/layouts/Base.astro'
+import PostPreview from '@/components/PostPreview.astro'
+
+const allPosts = await getCollection('posts')
+const sortedPosts = allPosts.sort(
+  (a, b) =>
+    // eslint-disable-next-line prettier/prettier
+    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+)
 ---
 
-<Base />
+<Base meta={{ title: config.title }}>
+  <div class="w700:grid-cols-1 grid grid-cols-2 gap-5">
+    {
+      sortedPosts.map((post) => (
+        <PostPreview
+          url={post.slug}
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={post.data.pubDate}
+        />
+      ))
+    }
+  </div>
+</Base>
