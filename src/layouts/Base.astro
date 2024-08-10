@@ -1,37 +1,60 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-  </head>
-  <body class="text-text dark:text-darkText">
-    <script>
-      function init() {
-        document.documentElement.classList.add('scroll-smooth')
-        // adding scroll-smooth class to html tag manually didn't work so I'm adding that class this way
+---
+import config from '@/config'
+import { ViewTransitions } from 'astro:transitions'
 
+import BaseHead from '@/components/BaseHead.astro'
+import Nav from '@/components/Nav.astro'
+import Footer from '@/components/Footer.astro'
+
+import '@fontsource/inter/600.css'
+import '@fontsource/inter/400.css'
+
+const {
+  meta: { title, description = config.description },
+} = Astro.props
+---
+
+<html lang={config.lang}>
+  <head>
+    <BaseHead title={title} description={description} />
+    <ViewTransitions />
+  </head>
+  <body
+    class="mx-auto max-w-[900px] bg-bg px-5 font-base text-text scrollbar scrollbar-thumb-black dark:bg-darkBg dark:text-darkText dark:scrollbar-thumb-white"
+  >
+    <Nav />
+    <main
+      class="min-h-[calc(100dvh-70px)] py-10 pt-[120px] w500:min-h-[calc(100dvh-70px)] w400:pt-[140px]"
+    >
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      import config from '@/config'
+
+      function colorMode() {
         if (
           localStorage.theme === 'dark' ||
           (!('theme' in localStorage) &&
             window.matchMedia('(prefers-color-scheme: dark)').matches)
         ) {
           document.documentElement.classList.add('dark')
+          document.documentElement.setAttribute(
+            'data-theme',
+            config.themes.dark as string
+          )
         } else {
           document.documentElement.classList.remove('dark')
+          document.documentElement.setAttribute(
+            'data-theme',
+            config.themes.light as string
+          )
         }
-
-        setTimeout(() => {
-          document.body.classList.add('duration-300', 'transition-colors')
-        }, 300)
-
-        // im adding those classes with 300ms delay, so theres no flashing on inital page load
       }
 
-      init()
-      document.addEventListener('astro:after-swap', init)
+      colorMode()
+      document.addEventListener('astro:after-swap', colorMode)
     </script>
-
-    <slot />
   </body>
 </html>

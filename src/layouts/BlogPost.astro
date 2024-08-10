@@ -1,0 +1,36 @@
+---
+import '@/global.css'
+
+import Base from '@/layouts/Base.astro'
+import PostInfo from '@/components/PostInfo.astro'
+
+const { frontmatter } = Astro.props
+---
+
+<Base meta={{ title: frontmatter.title }}>
+  <div
+    id="markdown"
+    class="prose prose-lightMode dark:prose-darkMode prose-headings:font-heading prose-headings:text-text dark:prose-headings:text-darkText prose-a:text-text prose-blockquote:text-text prose-strong:text-text prose-ol:text-text prose-ul:text-text prose-table:text-text prose-tr:text-text prose-td:text-text dark:prose-a:dark:text-darkText dark:prose-blockquote:text-darkText dark:prose-strong:text-darkText dark:prose-ol:text-darkText dark:prose-ul:text-darkText dark:prose-table:text-darkText dark:prose-tr:text-darkText dark:prose-td:text-darkText w500:prose-h1:text-xl w500:prose-h2:text-lg w500:prose-h3:text-base w500:prose-h4:text-sm w500:prose-h5:text-sm w500:prose-h6:text-sm w-full min-w-full leading-loose text-text dark:text-darkText w500:text-sm w500:leading-[2.2] w400:text-xs w400:leading-[2.2]"
+  >
+    <PostInfo
+      title={frontmatter.title}
+      date={frontmatter.pubDate}
+      tags={frontmatter.tags}
+    />
+    <slot />
+  </div>
+</Base>
+
+<style is:global>
+  #markdown code:not(pre)::before,
+  #markdown code:not(pre)::after {
+    content: '';
+  }
+
+  html #markdown code:not(pre code) {
+    border: 1px solid #000000;
+    @apply bg-main text-text;
+    padding: 2px 6px;
+    border-radius: 10px;
+  }
+</style>
