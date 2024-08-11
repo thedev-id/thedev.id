@@ -1,17 +1,12 @@
-# Astro starter template
+<img src="public/preview.png" />
 
-This template is for neobrutalism template creators (for this organization) who want to start building asap, without having to install and set everything from scratch.
+# Blog
 
-This template includes:
-
-- astro 4
-- tailwind (with default variables from [styling docs](https://neobrutalism-components.vercel.app/docs/styling))
-- eslint + prettier (with plugin for sorting tailwind classnames)
-- cn utility function
+Blog is a neobrutalism-styled astro tailwind template for blogs.
 
 ## Get started
 
-Once you join this organization (message me on [twitter](https://x.com/samuelbreznjak), and I'll send you an invite) make a new repo in this organization by clicking the "Use this template" button on the top right.
+[Create a new repo](https://github.com/neobrutalism-templates/blog/generate) from this template.
 
 ### Installation
 
@@ -28,3 +23,33 @@ To run the app locally:
 ```bash
 pnpm run dev
 ```
+
+### Config
+
+- Go to `astro.config.mjs` and change site
+- Go to `src/config.ts` and configure data for meta tags
+- You can customize code blocks config by changing `expressiveCode` object in astro config. Visit [expressive-code docs](https://expressive-code.com/reference/configuration) for more info.
+- To change code blocks theme, you'll have to update themes both in `themes` array and in `config.ts`
+
+### How to add new post
+
+Create a new md/mdx file inside src/content/posts, and make sure it's in this format:
+
+```
+---
+title: 'First post'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Dec 22 2023'
+tags: ['astro', 'blogging', 'learning']
+---
+
+Your post
+```
+
+### Styling
+
+To change the styling visit [styling docs](https://neobrutalism-components.vercel.app/docs/styling), and copy the desired styling to tailwind config like it's shown in the styling docs.
+
+Make sure to not delete `fontFamily`, `screens`, and `typography` from tailwind config.
+
+After you change the font weight you'll have to update font imports inside `src/layouts/Base.astro`.
