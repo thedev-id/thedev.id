@@ -25,5 +25,5 @@ export default defineConfig({
     }),
     mdx(),
   ],
-  site: 'https://astro-minimal.netlify.app/',
+  site: 'https://neobrutalism-blog.netlify.app/',
 })
