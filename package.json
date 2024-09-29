@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "astro-starter-template",
   "type": "module",
   "version": "0.0.1",
@@ -43,5 +44,15 @@
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-tailwindcss": "^0.6.5"
+=======
+  "private": true,
+  "name": "thedev.id",
+  "author": "Frans Allen",
+  "scripts": {
+    "sort": "sort-json subdomains.json"
+  },
+  "devDependencies": {
+    "sort-json": "^2.0.1"
+>>>>>>> ddc9297fd9c7375547c33b0f129ad068f6462274
   }
 }

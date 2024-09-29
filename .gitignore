@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # build output
 dist/
 # generated types
@@ -22,3 +23,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+=======
+node_modules
+package-lock.json
+yarn.lock
+>>>>>>> ddc9297fd9c7375547c33b0f129ad068f6462274
