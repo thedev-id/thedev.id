@@ -1,6 +1,6 @@
 ---
 title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax.'
+description: 'Here is a sample of some basic Markdown syntax. Tutorial'
 pubDate: 'Jan 07 2024'
 tags: ['guide', 'style', 'markdown']
 ---

@@ -12,9 +12,9 @@ type Config = {
 }
 
 export default {
-  author: 'John Doe',
-  title: 'Neobrutalism blog template',
-  description: 'Lorem ipsum dolor sit amet',
+  author: 'Zeke',
+  title: 'Zeke\'s site',
+  description: 'Blog',
   lang: 'en',
   themes: {
     dark: 'github-dark',
