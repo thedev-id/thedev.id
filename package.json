@@ -7,5 +7,10 @@
   },
   "devDependencies": {
     "sort-json": "^2.0.1"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0",
+    "next": "^15.1.0",
+    "next.js": "^1.0.3"
   }
 }
