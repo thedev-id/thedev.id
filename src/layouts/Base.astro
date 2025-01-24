@@ -1,0 +1,60 @@
+---
+import config from '@/config'
+import { ViewTransitions } from 'astro:transitions'
+
+import BaseHead from '@/components/BaseHead.astro'
+import Nav from '@/components/Nav.astro'
+import Footer from '@/components/Footer.astro'
+
+import '@fontsource/inter/600.css'
+import '@fontsource/inter/400.css'
+
+const {
+  meta: { title, description = config.description },
+} = Astro.props
+---
+
+<html lang={config.lang}>
+  <head>
+    <BaseHead title={title} description={description} />
+    <ViewTransitions />
+  </head>
+  <body
+    class="mx-auto max-w-[900px] bg-bg px-5 font-base text-text scrollbar scrollbar-thumb-black dark:bg-darkBg dark:text-darkText dark:scrollbar-thumb-white"
+  >
+    <Nav />
+    <main
+      class="min-h-[calc(100dvh-70px)] py-10 pt-[120px] w500:min-h-[calc(100dvh-70px)] w400:pt-[140px]"
+    >
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      import config from '@/config'
+
+      function colorMode() {
+        if (
+          localStorage.theme === 'dark' ||
+          (!('theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+          document.documentElement.classList.add('dark')
+          document.documentElement.setAttribute(
+            'data-theme',
+            config.themes.dark as string
+          )
+        } else {
+          document.documentElement.classList.remove('dark')
+          document.documentElement.setAttribute(
+            'data-theme',
+            config.themes.light as string
+          )
+        }
+      }
+
+      colorMode()
+      document.addEventListener('astro:after-swap', colorMode)
+    </script>
+  </body>
+</html>

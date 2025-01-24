@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content'
+
+import Base from '@/layouts/Base.astro'
+
+const allPosts = await getCollection('posts')
+const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())]
+---
+
+<Base meta={{ title: 'Tags' }}>
+  <h2 class="text-2xl font-heading tracking-wide w500:text-lg">Tags</h2>
+
+  <div class="mt-4 flex flex-wrap gap-4">
+    {
+      tags.map((tag) => (
+        <a
+          class="inline-block rounded-base border-2 border-border bg-main px-3 py-1 text-base text-text no-underline dark:border-darkBorder w500:text-sm"
+          href={`/tags/${tag}`}
+        >
+          #{tag}
+        </a>
+      ))
+    }
+  </div>
+</Base>
