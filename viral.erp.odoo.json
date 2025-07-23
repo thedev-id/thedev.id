@@ -1,0 +1,12 @@
+{
+  "name": "odoo-server",
+  "description": "my personal development",
+  "owner": {
+    "username": "viralkumar-git",
+    "email": "viralkumar.joshi@gmail.com"
+  },
+  "repo": "https://github.com/viralkumar-git/viralkumar-git.github.io",
+  "records": {
+    "CNAME": "viralkumar-git.github.io"
+  }
+}
