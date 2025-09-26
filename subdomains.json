@@ -221,4 +221,15 @@
   "zh": "zh.github.io",
   "zuhaib": "powrhouseofthecell.github.io",
   "zvqle": "zvqlesrealm.vercel.app"
+  {
+  "bunnybot": {
+    "owner": {
+      "username": "rahulg2893",
+      "email": "kamalrahul899@gmail.com"
+    },
+    "record": {
+      "CNAME": "rahulg2893.github.io"
+    }
+  }
+}
 }
