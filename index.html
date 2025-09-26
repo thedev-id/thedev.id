@@ -1,57 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>thedev.id - A free identity for developers on the web</title>
-  <meta name="description" content="A free thedev.id subdomain for developers on the web.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@fransallen">
-  <meta name="twitter:title" content="thedev.id">
-  <meta name="twitter:description" content="A free thedev.id subdomain for developers on the web.">
-  <meta property="og:url" content="https://thedev.id/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="thedev.id">
-  <meta property="og:description" content="A free thedev.id subdomain for developers on the web.">
-  <meta property="og:image" content="https://cdn.statically.io/og/theme=dark/%7Bname%7D.thedev.id.jpg">
-  <meta name="twitter:image" content="https://cdn.statically.io/og/theme=dark/%7Bname%7D.thedev.id.jpg">
-  <link rel="icon" href="https://cdn.statically.io/icon/g/t.png" type="image/png">
-  <link rel="stylesheet" href="https://cdn.statically.io/libs/tailwindcss/1.4.6/tailwind.min.css">
-</head>
-<body class="p-8 max-w-xl m-auto">
-  <header class="text-center mt-10">
-    <a href="/">
-      <h1 class="text-4xl font-bold">thedev.id</h1>
-    </a>
-    <h2 class="font-semibold">A free identity for developers on the web</h2>
-    <div class="mt-10">
-      <h3 class="inline font-bold">
-        <span class="typed"></span>.thedev.id
-      </h3>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bunny Bot</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f8f9fa;
+        color: #333;
+      }
 
-  <main class="mt-10">
-    <p>Are you a developer exploring an awesome name for your personal website and projects? You came to the right place!</p>
+      header {
+        text-align: center;
+        padding: 80px 20px;
+        background: linear-gradient(135deg, #6c63ff, #4a47a3);
+        color: white;
+      }
 
-    <p class="mt-3"><strong>thedev.id</strong> is a free identity for developers on the web. This service offers a handy subdomain service for you to have a subdomain like <code class="bg-black py-1 px-2 text-white rounded text-sm">foo.thedev.id</code> or <code class="bg-black py-1 px-2 text-white rounded text-sm">bar.thedev.id</code> for use on your static sites via CNAME DNS record. Fork, add subdomain and send a <a class="border-b border-black" href="https://github.com/fransallen/thedev.id">Pull Request</a>. We will make it work!</p>
-  </main>
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+      }
 
-  <footer class="mt-10 mb-20 text-sm">
-    <p>
-      A project by <a class="border-b border-black" href="https://x.com/fransallen" target="_blank">Frans Allen</a> and <a class="border-b border-black" href="https://github.com/fransallen/thedev.id/graphs/contributors">contributors</a>
-      &bull; <a class="border-b border-black" href="https://statically.io/">Statically</a>
-      &bull; <a class="border-b border-black" href="https://github.com/fransallen/thedev.id">GitHub</a>
-    </p>
-  </footer>
+      header p {
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+      }
 
-  <script src="https://cdn.statically.io/libs/typed.js/2.0.11/typed.min.js"></script>
-  <script>
-    var typed = new Typed('.typed', {
-      strings: ["frans", "kevin", "name"],
-      typeSpeed: 240,
-      showCursor: false
-    });
-  </script>
-</body>
+      /* Pill buttons */
+      header .btn-group a {
+        margin: 0 10px;
+        padding: 12px 26px;
+        font-weight: bold;
+        border-radius: 999px; /* pill style */
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.2s ease;
+      }
+
+      .btn-invite {
+        background: #4caf50;
+        color: white;
+      }
+      .btn-invite:hover {
+        background: #45a049;
+        transform: scale(1.05);
+      }
+
+      .btn-docs {
+        background: #6c63ff;
+        color: white;
+      }
+      .btn-docs:hover {
+        background: #5b54d6;
+        transform: scale(1.05);
+      }
+
+      .btn-support {
+        background: #ff4081;
+        color: white;
+      }
+      .btn-support:hover {
+        background: #e73370;
+        transform: scale(1.05);
+      }
+
+      .btn-donate {
+        background: #ffb400;
+        color: white;
+      }
+      .btn-donate:hover {
+        background: #e6a200;
+        transform: scale(1.05);
+      }
+
+      section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .feature {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+      }
+
+      .feature:hover {
+        transform: translateY(-5px);
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        background: #222;
+        color: #aaa;
+      }
+
+      footer a {
+        color: #6c63ff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🐰 Bunny Bot</h1>
+      <p>
+        Your all-in-one Discord companion — moderation, automod, logging,
+        starboard, bump reminders, music, and more.
+      </p>
+      <div class="btn-group">
+        <a
+          class="btn-invite"
+          href="https://discord.com/oauth2/authorize?client_id=1411603909793026100&permissions=8&integration_type=0&scope=bot+applications.commands"
+          >➕ Invite Bunny Bot</a
+        >
+        <a class="btn-docs" href="docs.html">📘 Documentation</a>
+        <a class="btn-support" href="https://discord.gg/nUVxJTKpNu"
+          >💬 Support Server</a
+        >
+        <a class="btn-donate" href="https://buymeacoffee.com/bunnybot"
+          >☕ Donate</a
+        >
+      </div>
+    </header>
+
+    <section>
+      <h2>✨ Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>⚒️ Moderation</h3>
+          <p>
+            Kick, ban, jail, mute, and more with easy-to-use commands and logs.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>🛡️ AutoMod & AntiNuke</h3>
+          <p>
+            Protect your server from spam, raids, links, invites, and nukes.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>📊 Stats & Invites</h3>
+          <p>
+            Track server growth, message activity, and user invites with
+            detailed graphs.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>🎵 Music</h3>
+          <p>
+            Play music from YouTube and other sources with high-quality audio.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>⭐ Starboard</h3>
+          <p>
+            Save your community’s best moments when messages get enough
+            reactions.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>🛠️ Utilities</h3>
+          <p>
+            AFK, bump reminders, ticket system, welcome/goodbye messages, and
+            more.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🔗 Important Links</h2>
+      <p style="text-align: center">
+        <a href="privacy.html">Privacy Policy</a> •
+        <a href="tos.html">Terms of Service</a> •
+        <a href="faq.html">FAQ</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2025 Bunny Bot. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
