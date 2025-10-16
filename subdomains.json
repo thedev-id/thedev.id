@@ -221,12 +221,5 @@
   "zh": "zh.github.io",
   "zuhaib": "powrhouseofthecell.github.io",
   "zvqle": "zvqlesrealm.vercel.app",
-  "waynelxn": {
-    "owner": {
-      "username": "waynelxn"
-    },
-    "record": {
-      "CNAME": "waynelxn.github.io/"
-    }
-  }
+  "waynelxn": "waynelxn.github.io",
 }
