@@ -223,13 +223,3 @@
   "zuhaib": "powrhouseofthecell.github.io",
   "zvqle": "zvqlesrealm.vercel.app"
 }
-
-{
-  "subdomain": "perspicacity",
-  "owner": {
-    "username": "mdselimdev"
-  },
-  "record": {
-    "CNAME": "mdselimdev.github.io"
-  }
-}
