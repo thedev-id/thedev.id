@@ -1,10 +1,10 @@
 {
-  "description": "My frontend website hosted on Netlify",
+  "description": "👋, I Developer, Designer, Media & Event Volunteer :)",
   "owner": {
-    "repo": "https://www.netlify.com",
-    "email": "твоя_пошта@gmail.com"
+    "repo": "https://github.com/dani1kx/dani1kx.thedev.id",
+    "email": "its.dani1kx@gmail.com"
   },
   "record": {
-    "CNAME": "твій_сайт.netlify.app"
+    "CNAME": "https://dani1kx.netlify.app"
   }
 }
