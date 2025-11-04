@@ -1,0 +1,10 @@
+{
+  "description": "My frontend website hosted on Netlify",
+  "owner": {
+    "repo": "https://www.netlify.com",
+    "email": "твоя_пошта@gmail.com"
+  },
+  "record": {
+    "CNAME": "твій_сайт.netlify.app"
+  }
+}
