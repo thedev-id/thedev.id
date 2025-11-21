@@ -221,14 +221,6 @@
   "zh": "zh.github.io",
   "zuhaib": "powrhouseofthecell.github.io",
   "zvqle": "zvqlesrealm.vercel.app",
-  "khp": {
-  "owner": {
-    "username": "krishnaharshap",
-    "email": "krishnaharshap11@gmail.com"
-  },
-  "record": {
-    "CNAME": "cloudflare-pages-7mx.pages.dev"
-  }
-}
+  "khp": "cloudflare-pages-7mx.pages.dev"
 
 }
