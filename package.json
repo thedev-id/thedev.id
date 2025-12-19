@@ -3,9 +3,11 @@
   "name": "thedev.id",
   "author": "Frans Allen",
   "scripts": {
-    "sort": "sort-json subdomains.json"
+    "sort": "sort-json subdomains.json",
+    "dev": "serve"
   },
   "devDependencies": {
+    "serve": "^14.2.5",
     "sort-json": "^2.0.1"
   }
 }
