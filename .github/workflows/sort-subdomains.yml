@@ -1,0 +1,36 @@
+name: Format and Sort Subdomains
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'subdomains.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write # Crucial: Allows the action to commit changes back to your fork
+
+jobs:
+  sort:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 'lts/*'
+
+
+    - name: Install dependencies and sort JSON
+      run: |
+        npm install
+        npm run sort
+
+    - name: Commit and Push Changes
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "chore: automatically sort subdomains.json"
+        file_pattern: 'subdomains.json'
