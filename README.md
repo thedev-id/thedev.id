@@ -18,6 +18,7 @@ An identity for developers on the web.
 ### Similar Services
 - [Open Domains](https://github.com/open-domains/register)
 - [cluster.ws & wip.la](https://github.com/Olivr/free-domain)
+- [fluxcast.dev](https://github.com/IlyaP358/fluxcast-domains)
 - [is-a.dev](https://github.com/is-a-dev/register)
 - [is-a-good.dev](https://github.com/is-a-good-dev/register)
 - [is-really.cool](https://github.com/is-really-cool/register)
