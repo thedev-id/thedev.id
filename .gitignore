@@ -1,3 +1,7 @@
 node_modules
 package-lock.json
 yarn.lock
+
+# local editor config (not shared)
+.vscode
+.vscode-test
