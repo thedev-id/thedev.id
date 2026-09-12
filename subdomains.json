@@ -220,5 +220,10 @@
   "zen": "zen-sveltekit.vercel.app",
   "zh": "zh.github.io",
   "zuhaib": "powrhouseofthecell.github.io",
-  "zvqle": "zvqlesrealm.vercel.app"
+  "zvqle": "zvqlesrealm.vercel.app",
+  "amplora": "cname.vercel-dns.com",
+  "amplora-admin": "cname.vercel-dns.com",
+  "amplora-ai": "amplora-ai.onrender.com",
+  "amplora-api": "amplora-api.onrender.com",
+  "amplora-company": "cname.vercel-dns.com",
 }
