@@ -219,6 +219,11 @@
   "zarconweb": "zaxyan.github.io",
   "zen": "zen-sveltekit.vercel.app",
   "zh": "zh.github.io",
-  "zuhaib": "powrhouseofthecell.github.io",
-  "zvqle": "zvqlesrealm.vercel.app"
+  "zuhaib": "powerhouseofthecell.github.io",
+  "zvqle": "zvqlesrealm.vercel.app",
+  "diamondmod": {
+    "owner": "woraphataim-sketch",
+    "description": "P-Diamond MOD",
+    "cname": "p-diamond-mod.woraphat-aim.workers.dev"
+  }
 }
