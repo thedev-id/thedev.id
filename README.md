@@ -12,7 +12,7 @@ An identity for developers on the web.
 - Fork this repo.
 - Set a custom domain to your [GitHub Pages](https://pages.github.com).
 - Add your subdomain under `subdomains.json` file.
-- Run `npm install` and `npm run sort` to sort the keys alphabetically.
+- Run `npm install` and `npm run sort` to sort the keys alphabetically. The `sort` script also auto-fixes common JSON syntax errors (like missing commas) before sorting.
 - Send Pull Request.
 
 ### Similar Services
