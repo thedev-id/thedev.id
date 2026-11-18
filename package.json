@@ -3,7 +3,7 @@
   "name": "thedev.id",
   "author": "Frans Allen",
   "scripts": {
-    "sort": "sort-json subdomains.json",
+    "sort": "node scripts/fix-subdomains.js && sort-json subdomains.json",
     "dev": "serve"
   },
   "devDependencies": {
