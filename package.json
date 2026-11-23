@@ -4,7 +4,7 @@
   "author": "Frans Allen",
   "scripts": {
     "sort": "sort-json subdomains.json",
-    "dev": "serve"
+    "dev": "node init && serve"
   },
   "devDependencies": {
     "serve": "^14.2.5",
